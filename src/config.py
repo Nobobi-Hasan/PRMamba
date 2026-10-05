@@ -77,16 +77,16 @@ EMBED_DIM = 96
 BATCH_SIZE = 4
 
 # Total targeted training epochs across each session
-NUM_EPOCHS = 90
+NUM_EPOCHS = 50
 
 # Stage 1: Expert Pre-Training Settings
 PRETRAIN_EPOCHS = 300
 PRETRAIN_LR = 1e-3
 
 # Stage 2: Joint Training Settings
-TOTAL_EPOCHS = 350
+TOTAL_EPOCHS = 500
 BASE_LR = 1e-3
-ENCODER_LR = 1e-4  # Lower LR for fine-tuning pre-trained encoders
+ENCODER_LR = 1e-5  # Lower LR for fine-tuning pre-trained encoders
 WEIGHT_DECAY = 1e-5
 
 # Lowest learning rate boundary for the scheduler decay cycle
@@ -101,7 +101,7 @@ NUM_WORKERS = 2
 # 5. Advanced Component Parameters
 # =========================================================================
 # Epoch threshold to unfreeze encoders (Phase 1 Frozen Warm-up)
-FROZEN_WARMUP_EPOCHS = 30
+FROZEN_WARMUP_EPOCHS = 500
 
 # Weight multiplier for the shared-weight auxiliary decoder loss
 AUX_LOSS_WEIGHT = 0.4
