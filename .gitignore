@@ -21,7 +21,6 @@ checkpoints/
 
 # Logs/results
 logs/
-results/
 outputs/
 
 # Large files
